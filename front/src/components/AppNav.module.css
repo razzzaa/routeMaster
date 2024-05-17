@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  transition: 0.5s;
+}
+
+.nav li:nth-of-type(1) {
+  border-right: var(--color-dark--1) solid 2px;
+}
+
+.nav li:nth-of-type(2) {
+  border-left: var(--color-dark--1) solid 2px;
+}
+
+.nav a:link,
+.nav a:visited {
+  background-color: none;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s;
+  display: block;
+  padding: 10px 30px;
+  background-color: var(--color-darkLight--1);
+}
+
+.nav a:global(.active) {
+  background-color: var(--color-buttons--green);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

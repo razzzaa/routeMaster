@@ -1,0 +1,26 @@
+button {
+  color: inherit;
+  border: none;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.loginBtn {
+  background-color: var(--color-buttons--green);
+}
+
+.logoutBtn {
+  background-color: var(--color-buttons--red);
+}
+
+.small {
+  font-size: smaller;
+  padding: 0.4rem;
+}

@@ -1,0 +1,6 @@
+.layoutContaienr {
+  display: flex;
+  height: calc(100vh - 5rem);
+  flex-direction: row;
+  margin: 2%;
+}

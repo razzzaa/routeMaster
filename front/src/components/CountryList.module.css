@@ -1,0 +1,10 @@
+.countryListContainer {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--color-darkLight--1);
+  border-radius: 10px;
+  max-height: 65vh;
+  overflow-y: scroll;
+}

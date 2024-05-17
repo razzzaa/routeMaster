@@ -1,0 +1,42 @@
+.cityNameBox {
+  width: 20%;
+}
+
+.cityItemFlagBox {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.deleteIcon {
+  margin-left: 8%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.deleteIcon:hover {
+  transform: scale(1.05);
+}
+
+.cityItem,
+.cityItem:link,
+.cityItem:visited {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--color-darkLight--1);
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+  font-size: 1rem;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.cityItem:hover {
+  border-left: 6px solid var(--color-buttons--green);
+}

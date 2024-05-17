@@ -1,0 +1,35 @@
+.btn {
+  color: inherit;
+  text-transform: uppercase;
+  padding: 0.8rem 1.6rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
+  transform: translateY(-1px);
+}
+
+.primary {
+  position: absolute;
+  font-weight: 500;
+  background-color: var(--color-buttons--green);
+  color: var(--color-dark--1);
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  bottom: 1rem;
+
+  right: 2rem;
+}
+
+.back {
+  font-weight: 600;
+  background: none;
+  border: 1px solid currentColor;
+}

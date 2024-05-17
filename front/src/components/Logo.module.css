@@ -1,0 +1,22 @@
+.logo_img {
+  border-radius: 50%;
+  margin: 20px 20px;
+  width: 50%;
+  height: auto;
+}
+
+.container {
+  z-index: 1000;
+}
+
+@media (max-width: 450px) {
+  .logo_img {
+    width: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo_img {
+    width: 60%;
+  }
+}

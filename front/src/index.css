@@ -1,0 +1,66 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css";
+
+:root {
+  --color-buttons--green: #00c46a;
+  --color-buttons--red: #ea4335;
+  --color-buttons-green--hover: #00c46994;
+  --main-color--darkBlue: #37546d;
+  --color-navBar--darkGrey: #202020;
+  --color-darkGrey--2: #444444;
+  --color-dark--1: #2d3439;
+  --color-darkLight--1: #3f4950;
+
+  --color-light--1: #aaaaaa69;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  color: var(--color-light--2);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-buttons--green);
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  margin: 4rem 0;
+  transition: all 0.3s ease-in-out;
+}
+.cta:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
+  transform: translateY(-1px);
+}
+
+*::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-light--1);
+  border-radius: 20px;
+}

@@ -1,0 +1,13 @@
+.flag {
+  border-radius: 10px;
+  border: rgba(255, 255, 255, 0.178) solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.small {
+  width: 13%;
+}
+
+.big {
+  width: 30%;
+}

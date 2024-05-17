@@ -1,0 +1,8 @@
+.cityListContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 65vh;
+  overflow-y: scroll;
+  margin: 0.3rem;
+  box-sizing: content-box;
+}

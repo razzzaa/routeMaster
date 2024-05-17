@@ -1,0 +1,17 @@
+.countryItemContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--color-darkLight--1);
+  margin-top: 2%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.countryItemContainer > p {
+  max-width: 15%;
+}
