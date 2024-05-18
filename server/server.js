@@ -14,7 +14,10 @@ const app = express();
 // DEVELOPMENT:
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: [
+      "https://routemaster.onrender.com",
+      "https://routemasterserver.onrender.com",
+    ],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
