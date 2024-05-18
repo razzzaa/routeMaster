@@ -14,7 +14,7 @@ const app = express();
 // DEVELOPMENT:
 app.use(
   cors({
-    origin: ["https://routemaster2.onrender.com", "http://localhost:3000"],
+    origin: ["http://localhost:5173", "http://localhost:3000"],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
@@ -212,7 +212,6 @@ app.delete("/api/deleteCity/:id", (req, res) => {
 
 app.post("/api/register", (req, res) => {
   const { name, email, password } = req.body;
-  console.log(name);
   try {
     bcrypt.hash(password, saltRounds, (error, hash) => {
       if (error)
@@ -222,13 +221,11 @@ app.post("/api/register", (req, res) => {
         [name, email, hash],
         (error, result) => {
           if (error) {
-            console.log(error);
             return res.status(500).json({
               success: false,
               message: "Registration failed.",
             });
           } else {
-            console.log(result);
             conn.query(
               `SELECT email, name, id FROM users WHERE email=?`,
               [email],
