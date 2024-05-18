@@ -12,7 +12,7 @@ const verifyUser = require("./authServer");
 const app = express();
 
 // DEVELOPMENT:
-/* app.use(
+app.use(
   cors({
     origin: [
       "https://routemaster.onrender.com",
@@ -21,16 +21,16 @@ const app = express();
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
-); */
+);
 
 // PRODUCTION:
-app.use(
+/* app.use(
   cors({
     origin: ["http://localhost:5173", "http://localhost:3030"],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
-);
+); */
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
