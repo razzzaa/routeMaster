@@ -4,29 +4,26 @@ import styles from "./City.module.css";
 import { useParams } from "react-router-dom";
 import Flag from "./Flag";
 import BackButton from "./BackButton";
-import SpinnerFullPage from "./SpinnerFullPage";
 
-const formatDate = (date) =>
+/* const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
     month: "long",
     year: "numeric",
     weekday: "long",
-  }).format(new Date(date));
+  }).format(new Date(date)); */
 
 function City() {
   const { id } = useParams();
-  const { getCity, currentCity, isLoading } = useCountries();
+  const { getCity, currentCity } = useCountries();
 
   useEffect(() => {
     getCity(id);
   }, [id, getCity]);
 
-  const { city, date, notes, countryIso, country } = currentCity;
+  const { city, uiDate, notes, countryIso, country } = currentCity;
   console.log(countryIso);
   console.log(city);
-
-  if (isLoading) return <SpinnerFullPage />;
 
   return (
     <div className={styles.cityContainer}>
@@ -43,7 +40,7 @@ function City() {
       <main className={styles.mainBox}>
         <div className={styles.date}>
           <h5>
-            Youve visited {city} on: {formatDate(date || null)}
+            Youve visited {city} on: {uiDate || null}
           </h5>
         </div>
 

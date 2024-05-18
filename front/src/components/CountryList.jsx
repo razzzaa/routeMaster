@@ -1,14 +1,11 @@
 import { useCountries } from "../contexts/CountriesContext";
 import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
-import SpinnerFullPage from "./SpinnerFullPage";
 import Message from "./Message";
 
 function CountryList() {
-  const { locations, isLoading } = useCountries();
+  const { locations } = useCountries();
   console.log(locations);
-
-  if (isLoading) return <SpinnerFullPage />;
 
   if (!locations[0])
     return <Message message="Start by clicking somewhere on the map" />;

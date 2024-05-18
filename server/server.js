@@ -12,7 +12,7 @@ const verifyUser = require("./authServer");
 const app = express();
 
 // DEVELOPMENT:
-app.use(
+/* app.use(
   cors({
     origin: [
       "https://routemaster.onrender.com",
@@ -21,16 +21,16 @@ app.use(
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
-);
+); */
 
 // PRODUCTION:
-/* app.use(
+app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: ["http://localhost:5173", "http://localhost:3030"],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true,
   })
-); */
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -152,13 +152,14 @@ app.get("/api/cities/:id", (req, res) => {
 // });
 
 app.post("/api/addCity", (req, res) => {
-  const { city, country, countryIso, date, notes, lat, lng, userId } = req.body;
+  const { city, country, countryIso, MYSQLdate, notes, lat, lng, userId } =
+    req.body;
   console.log(city);
   try {
     conn.query(
       `INSERT INTO locations (city, country, countryIso, date, notes, lat ,lng) 
         VALUES (?,?,?,?,?,?,?)`,
-      [city, country, countryIso, date, notes, lat, lng],
+      [city, country, countryIso, MYSQLdate, notes, lat, lng],
       (error, result) => {
         if (error) {
           console.log(error);
@@ -411,4 +412,7 @@ app.get("/api/logOut", (req, res) => {
   }
 });
 
-app.listen(port, console.log(`listening to port ${process.env.PORT}!`));
+app.listen(
+  process.env.PORT,
+  console.log(`listening to port ${process.env.PORT}!`)
+);

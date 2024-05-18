@@ -4,10 +4,9 @@ import styles from "./CityItem.module.css";
 import { MdDeleteForever } from "react-icons/md";
 import { useCountries } from "../contexts/CountriesContext";
 import { Link } from "react-router-dom";
-import SpinnerFullPage from "./SpinnerFullPage";
 
 function CityItem({ loc }) {
-  const { isLoading, deleteCity } = useCountries();
+  const { deleteCity } = useCountries();
 
   const { lat, lng, id, city, country, countryIso } = loc;
   console.log(loc);
@@ -20,8 +19,6 @@ function CityItem({ loc }) {
     e.preventDefault();
     deleteCity(id);
   }
-
-  if (isLoading) return <SpinnerFullPage />;
 
   return (
     <Link

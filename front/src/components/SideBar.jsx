@@ -2,14 +2,9 @@ import styles from "./SideBar.module.css";
 import Logo from "./Logo.jsx";
 import AppNav from "./AppNav.jsx";
 import { Outlet } from "react-router-dom";
-import SpinnerFullPage from "./SpinnerFullPage";
-import { useCountries } from "../contexts/CountriesContext";
+/* import SpinnerFullPage from "./SpinnerFullPage"; */
 
 function SideBar() {
-  const { isLoading } = useCountries();
-
-  if (isLoading) return <SpinnerFullPage />;
-
   return (
     <div className={styles.sidebarContainer}>
       <Logo className={styles.logo} />

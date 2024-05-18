@@ -1,16 +1,9 @@
 import styles from "./UserWindow.module.css";
 import { useUser } from "../contexts/UserContext";
 import LogButton from "./LogButton";
-import SpinnerFullPage from "./SpinnerFullPage";
-
-import { useCountries } from "../contexts/CountriesContext";
 
 function UserWindow() {
   const { currentUser } = useUser();
-  const { isLoading } = useCountries();
-
-  if (isLoading) return <SpinnerFullPage />;
-
   return (
     <div className={styles.userContainer}>
       <ul className={styles.userWin}>

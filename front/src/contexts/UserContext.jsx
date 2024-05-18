@@ -92,7 +92,6 @@ function UserProvider({ children }) {
           },
         });
     }
-
     checkAuth();
   }, []);
 

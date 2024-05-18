@@ -9,9 +9,16 @@ import Button from "./Button";
 import Flag from "./Flag";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { v4 as uuidv4 } from "uuid";
 import BackButton from "./BackButton";
 import { useUser } from "../contexts/UserContext";
+
+const formatDateToUi = (date) =>
+  new Intl.DateTimeFormat("en", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    weekday: "long",
+  }).format(new Date(date));
 
 function Form() {
   const [lat, lng] = useUrlPosition();
@@ -66,12 +73,18 @@ function Form() {
     e.preventDefault();
 
     if (!city || !date) return;
+    console.log(date);
+    const uiDate = formatDateToUi(date);
+    console.log(uiDate);
+    const MYSQLdate = date.toISOString().split("T")[0];
+    console.log(MYSQLdate);
 
     const newCity = {
       city,
       country,
       countryIso,
-      date,
+      uiDate,
+      MYSQLdate,
       notes,
       lat,
       lng,
