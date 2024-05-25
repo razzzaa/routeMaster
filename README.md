@@ -74,7 +74,9 @@ Feel free to adjust the details according to your specific setup and requirement
 
 <a href="https://github.com/razzzaa"><strong>razzzaa</a></strong>
 
-<p><strong><a href="https://www.youtube.com/watch?v=K22_5LBuB9Y&ab_channel=MacMiller">In case of stress, click here.</a></strong></p>
+<p><strong><a href="https://www.youtube.com/watch?v=K22_5LBuB9Y&ab_channel=MacMiller">"If feeling overwhelmed, click here."
+
+</a></strong></p>
 
 ## Contact
 
