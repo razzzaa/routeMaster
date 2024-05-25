@@ -30,7 +30,7 @@ For styling the front end, CSS Modules were utilized for convenience and modular
 <p>Deployed website: <strong><a href="routemaster.onrender.com">routemaster.onrender.com/</a></strong>
 
 <p align="center">
-  <img alt="application screen-shot" [Screenshot] src="assets/images/routeScreen.png"><br>
+  <img alt="application screen-shot" [Screenshot] src="readmeAssets/images/routeScreen.png"><br>
 routeMaster
 </p>
 
