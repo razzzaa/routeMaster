@@ -72,7 +72,7 @@ It's worth noting that due to the usage of Render's free tier, web services may 
 
 <a href="https://github.com/razzzaa"><strong>razzzaa</a></strong>
 
-<p>Visit my website: <strong><a href="https://github.com/razzzaa">razzzaa</a></strong></p>
+<p><strong><a href="https://www.youtube.com/watch?v=K22_5LBuB9Y&ab_channel=MacMiller">In case of stress, click here.</a></strong></p>
 
 ## Contact
 
