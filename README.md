@@ -30,7 +30,7 @@ For styling the front end, CSS Modules were utilized for convenience and modular
 <p>Deployed website: <strong><a href="routemaster.onrender.com">routemaster.onrender.com/</a></strong>
 
 <p align="center">
-  <img alt="application screen-shot" [Screenshot] src="routeScreen.png"><br>
+  <img alt="application screen-shot" [Screenshot] src="assets/images/routeScreen.png"><br>
 routeMaster
 </p>
 
@@ -39,15 +39,25 @@ routeMaster
 Front End:
 
 1.Install dependencies:
-`npm install`
+
+```jsx
+npm install
+```
 
 2.Run:
-`npm run dev`
+
+```jsx
+npm run dev
+```
 
 Back End:
 
 1.Install dependencies:
-`npm install`
+
+```jsx
+npm install
+
+```
 
 2.Run:
 If you choose to use nodemon, `nodemon server`, otherwise run `node server`
