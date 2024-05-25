@@ -8,7 +8,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin: 2rem 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s;
 }
 
 .btn:hover {
@@ -32,4 +32,9 @@
   font-weight: 600;
   background: none;
   border: 1px solid currentColor;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  background-color: rgba(255, 255, 255, 0.39);
 }
