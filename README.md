@@ -19,15 +19,15 @@
 
 ## Description
 
-I built this project to practice building a fully functioning full-stack web application connected to a database and a server. The application aims to assist users in organizing their travel plans, both past and future.
+I created this project to practice building a fully functioning full-stack web application connected to a database and a server. The application aims to assist users in organizing their travel plans, both past and future. i decided to create this application after watching "The Ultimate React Course 2024: React, Next.js, Redux & More" by Jonas Schmedtmann on Udemy. The web application was inspired by a code-along from this course. I built it from scratch after watching the code-along lessons, added my twist to it, and developed the server side from scratch."
 
 This web application was developed using Vite for the front end, Express for the back end, and MySQL for the database. To manage state across the application, I implemented three context files using the Context API and React's useReducer. The first context file handles all user-related processes, such as authentication, login, and logout. Registering and logging in are managed on the server side.
 
 Upon registration or login, an API call is made from the Context API to the backend, where the "bcrypt" library is utilized for password hashing and decryption. Data is retrieved from the MySQL database connected to the backend. Additionally, "jsonwebtoken" and "cookie-parser" are employed for user verification. The expiration time of cookies is customizable, and inactive user tokens are automatically deleted, facilitating seamless logout.
 
-For styling the front end, CSS Modules were utilized for convenience and modularity. The server side is hosted on Google Cloud, while the application itself is hosted on Render.com. It's worth noting that due to the usage of Render's free tier, web services may go to sleep after a period of inactivity. To ensure proper functionality, users may need to log in, wait for a minute, refresh the page, and return to the home page. This should restore the application's intended functionality.
+For styling the front end, CSS Modules were utilized for convenience and modularity. The server side is hosted on Google Cloud, while the application itself is hosted on Render.com.
 
-<p>Deployed website: <strong><a href="routemaster.onrender.com">routemaster.onrender.com/</a></strong>
+<p>Deployed website: <strong><a href="routemaster.onrender.com">routemaster.onrender.com</a></strong>
 
 <p align="center">
   <img alt="application screen-shot" [Screenshot] src="readmeAssets/images/routeScreen.png"><br>
