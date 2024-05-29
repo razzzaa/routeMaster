@@ -76,7 +76,7 @@ In the server.js file, under the `//MYSQL` section, use the `//LOCAL` options fo
 
 After making these adjustments, you'll be ready to use this application for production.
 
-I created this application using XAMPP with Apache server and MySQL, you can use this method or any other that suits your preferences.
+I created this application using XAMPP with Apache server and phpMyAdmin, you can use this method or any other that suits your preferences.
 
 Feel free to adjust the details according to your specific setup and requirements!
 
