@@ -27,7 +27,7 @@ Upon registration or login, an API call is made from the Context API to the back
 
 For styling the front end, CSS Modules were utilized for convenience and modularity. The server side is hosted on Google Cloud, while the application itself is hosted on Render.com.
 
-<p>Deployed website: <strong><a href="routemaster.onrender.com">routemaster.onrender.com</a></strong>
+<p>Deployed website: <strong><a href="/routemaster.onrender.com">routemaster.onrender.com</a></strong>
 
 <p align="center">
   <img alt="application screen-shot" [Screenshot] src="readmeAssets/images/routeScreen.png"><br>
@@ -84,7 +84,7 @@ Feel free to adjust the details according to your specific setup and requirement
 
 <a href="https://github.com/razzzaa"><strong>razzzaa</a></strong>
 
-<p><strong><a href="https://www.youtube.com/watch?v=K22_5LBuB9Y&ab_channel=MacMiller">"If feeling overwhelmed, click here."
+<p><strong><a href="https://www.youtube.com/watch?v=hWdpZNkVfxw">"If feeling overwhelmed, click here."
 
 ## Contact
 
