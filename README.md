@@ -27,7 +27,7 @@ Upon registration or login, an API call is made from the Context API to the back
 
 For styling the front end, CSS Modules were utilized for convenience and modularity. The server side is hosted on Google Cloud, while the application itself is hosted on Render.com.
 
-<p>Deployed website: <strong><a href="/routemaster.onrender.com">routemaster.onrender.com</a></strong>
+<p>Deployed website: <strong><a href="https://routemaster.onrender.com/">routemaster.onrender.com</a></strong>
 
 <p align="center">
   <img alt="application screen-shot" [Screenshot] src="readmeAssets/images/routeScreen.png"><br>
